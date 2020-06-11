@@ -3,6 +3,7 @@ class Node:
         self.data = data
         self.left = None
         self.right = None
+        self.parent = None
 
 class BST:
     def __init__(self):
@@ -15,15 +16,19 @@ class BST:
             self._insert(data, self.root)
 
     def _insert(self, data, cur_node):
-        if data < cur_node.data:
+        if data <= cur_node.data:
             if cur_node.left is None:
                 cur_node.left = Node(data)
+                node = cur_node.left
+                node.parent = cur_node
             else:
                 self._insert(data, cur_node.left)
         
         elif data > cur_node.data:
             if cur_node.right is None:
                 cur_node.right = Node(data)
+                node = cur_node.right
+                node.parent = cur_node
             else: self._insert(data, cur_node.right)
 
         else:
@@ -65,7 +70,10 @@ bst.insert(20)
 bst.insert(2)
 bst.insert(10)
 bst.insert(5)
+bst.insert(7)
+bst.insert(9)
+print(bst.root.right.left)
 
-print(bst.find(10))
+# print(bst.find(10))
 print(bst.height())
 
