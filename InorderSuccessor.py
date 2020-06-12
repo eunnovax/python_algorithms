@@ -1,5 +1,6 @@
 from bst_insert_search import BST
 
+# Inorder traversal with complexity O(h)
 def InorderSuccessor(n):
     # Step 1: If node has right subtree
     if n.right is not None:
@@ -35,7 +36,7 @@ bst.insert(19)
 bst.insert(1)
 print('Root', bst.root)
 
-temp = bst.root.right.right
+temp = bst.root.right.left
 print('Child node is', temp)
 
 succ = InorderSuccessor(temp)
