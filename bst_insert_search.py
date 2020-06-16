@@ -14,8 +14,7 @@ class Queue(object):
 
     def peek(self):
         if not self.is_empty():
-            return self.items[-1].value
-
+            return self.items[-1]
     def __len__(self):
         return self.size()
 
@@ -87,26 +86,27 @@ class BST:
 
         return 1 + max(left_height, right_height)
 
-    def print_bst(self, traversal_type):
-        if traversal_type == "levelorder":
-            return self.levelorder_print(bst.root)
+    # def print_bst(self, traversal_type):
+    #     if traversal_type == "levelorder":
+    #         return self.levelorder_print(bst.root)
         
 
-    def levelorder_print(self, start):
-        if start is None:
+    def levelorder_print(self):
+        if self.root is None:
              return
         
         queue = Queue()
-        queue.enqueue(start)
-        traversal = ""
-        while len(queue) > 0:
-            traversal += str(queue.peek()) + "-"
+        queue.enqueue(self.root)
+        # traversal = ""
+        while not queue.is_empty():
+            # traversal += str(queue.peek()) + "-"
             node = queue.dequeue()
+            print(node.data)
             if node.left:
                 queue.enqueue(node.left)
             if node.right:
                 queue.enqueue(node.right)
-        return traversal
+        # return traversal
 
     # in-class inorder traversal with complexity O(n) 
     def inorder_print_tree(self):
@@ -140,6 +140,21 @@ class BST:
             else:
                 return False 
 
+    def findMin(self):
+        if(self.root == None):
+            return -1
+        root = self.root
+        while(root.left != None):
+            root = root.left
+        return root.data
+
+    def findMax(self):
+        if(self.root == None):
+            return -1
+        root = self.root
+        while(root.right != None):
+            root = root.right
+        return root.data 
 
 bst = BST()
 
@@ -157,13 +172,15 @@ bst.insert(9)
 
 #   1
 #  2 3
-tree = BST()
-tree.root = Node(1)
-tree.root.left = Node(2) 
-tree.root.right = Node(3)
+# tree = BST()
+# tree.root = Node(1)
+# tree.root.left = Node(2) 
+# tree.root.right = Node(3)
+
 # print(tree.inorder_print_tree())
-
-print(bst.is_bst_valid())
-print(tree.is_bst_valid())
-
+# print(bst.is_bst_valid())
+# print(tree.is_bst_valid())
+# print('bst minimum is', bst.findMin())
+# print('bst maximum is', bst.findMax())
+print(bst.levelorder_print())
 
