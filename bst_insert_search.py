@@ -140,13 +140,12 @@ class BST:
             else:
                 return False 
 
-    def findMin(self):
-        if(self.root == None):
+    def findMin(self, cur_node):
+        if(cur_node == None):
             return -1
-        root = self.root
-        while(root.left != None):
-            root = root.left
-        return root.data
+        while(cur_node.left != None):
+            cur_node = cur_node.left
+        return cur_node.data
 
     def findMax(self):
         if(self.root == None):
@@ -155,6 +154,38 @@ class BST:
         while(root.right != None):
             root = root.right
         return root.data 
+
+    def delete(self, data):
+        if(self.root == None):
+            return self.root
+        else:
+            deleted = self._delete(self.root, data)
+            return deleted
+
+    def _delete(self, cur_node, data):
+        if(data < cur_node.data):
+            cur_node.left = self._delete(cur_node.left, data)
+        elif(data > cur_node.data):
+            cur_node.right = self._delete(cur_node.right, data)
+        else:
+            # Case 1: No child
+            if(cur_node.left == None and cur_node.right == None):
+                del cur_node
+            # Case 2: 1 child
+            elif(cur_node.left == None):
+                temp = cur_node
+                cur_node = cur_node.right
+                del temp
+            elif(cur_node.right == None):
+                temp = cur_node
+                cur_node = cur_node.left
+                del temp
+            # Case 3: 2 children
+            else:
+                temp = self.findMin(cur_node.right)
+                cur_node.data = temp
+                cur_node.right = self._delete(cur_node.right, temp)
+        return cur_node
 
 bst = BST()
 
@@ -182,5 +213,7 @@ bst.insert(9)
 # print(tree.is_bst_valid())
 # print('bst minimum is', bst.findMin())
 # print('bst maximum is', bst.findMax())
-print(bst.levelorder_print())
+# print(bst.levelorder_print())
+print(bst.delete(4).data)
+print(bst.root.right.left.left.data)
 
