@@ -46,6 +46,24 @@ class LinkedList(object):
                 this_node = this_node.get_next()
         return None
 
+    def update(self, d, rd):
+        this_node = self.root
+        prev_node = None
+        while this_node:
+            if this_node.get_data() == rd:
+                new_node = Node(d, this_node.get_next())
+                if prev_node:
+                    prev_node.set_next(new_node)
+                    del this_node
+                else:
+                    self.root = new_node
+                    del this_node
+                return True
+            else:
+                prev_node = this_node
+                this_node = this_node.get_next()
+        return False
+
 ll = LinkedList()
 ll.add(4)
 ll.add(3)
@@ -56,8 +74,9 @@ ll.remove(23)
 print(ll.remove(40))
 print(ll.size)
 print(ll.find(40))
-# print(ll.root.data)
-# print(ll.root.next_node.data)
+print(ll.update(50, 3))
+print(ll.root.data)
+print(ll.root.next_node.data)
 # print(ll.root.next_node.next_node.data)
 # print(ll.root.next_node.next_node.next_node)
 # print(ll.root.next_node.next_node.next_node.next_node)
