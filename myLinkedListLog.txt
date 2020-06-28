@@ -1,0 +1,120 @@
+2020-06-27 22:31:39,382 - DEBUG - Start of the program
+2020-06-27 22:31:39,390 - DEBUG - Head of LL 23
+2020-06-28 13:12:46,504 - DEBUG - Start of the program
+2020-06-28 13:12:46,505 - DEBUG - Head of LL 23
+2020-06-28 13:12:46,505 - DEBUG - Head node is <__main__.Node object at 0x033CB610>
+2020-06-28 13:13:29,272 - DEBUG - Start of the program
+2020-06-28 13:13:29,273 - DEBUG - Head of LL 23
+2020-06-28 13:13:29,273 - DEBUG - Head node is 23
+2020-06-28 13:25:30,950 - DEBUG - Start of the program
+2020-06-28 13:25:30,950 - DEBUG - Head of LL 23
+2020-06-28 13:25:30,957 - DEBUG - Next node is None
+2020-06-28 13:25:30,958 - DEBUG - Head node is 23
+2020-06-28 14:26:21,942 - DEBUG - Start of the program
+2020-06-28 14:26:21,944 - DEBUG - Head of LL 23
+2020-06-28 14:26:21,944 - DEBUG - Next node is None
+2020-06-28 14:26:21,944 - DEBUG - Head node is 23
+2020-06-28 14:27:02,743 - DEBUG - Start of the program
+2020-06-28 14:27:02,744 - DEBUG - Head of LL 23
+2020-06-28 14:27:02,744 - DEBUG - Next node is None
+2020-06-28 14:27:02,744 - DEBUG - Head node is 23
+2020-06-28 14:32:06,589 - DEBUG - Start of the program
+2020-06-28 14:32:06,589 - DEBUG - Head of LL 23
+2020-06-28 14:32:06,589 - DEBUG - Next node is None
+2020-06-28 14:32:06,589 - DEBUG - Head node is 23
+2020-06-28 14:36:38,860 - DEBUG - Start of the program
+2020-06-28 14:36:38,860 - DEBUG - Head of LL 23
+2020-06-28 14:36:38,861 - DEBUG - Next node is None
+2020-06-28 14:36:38,861 - DEBUG - Prev node is 23
+2020-06-28 14:36:38,861 - DEBUG - This node next is None
+2020-06-28 14:36:38,861 - DEBUG - Head node is 23
+2020-06-28 14:39:33,678 - DEBUG - Start of the program
+2020-06-28 14:39:33,678 - DEBUG - Head of LL 23
+2020-06-28 14:39:33,678 - DEBUG - Next node is None
+2020-06-28 14:39:33,678 - DEBUG - Prev node is 23
+2020-06-28 14:42:51,488 - DEBUG - Start of the program
+2020-06-28 14:42:51,488 - DEBUG - Head of LL 23
+2020-06-28 14:42:51,488 - DEBUG - This node data is 23
+2020-06-28 14:42:51,488 - DEBUG - Next node is None
+2020-06-28 14:42:51,488 - DEBUG - Prev node is 23
+2020-06-28 14:53:44,465 - DEBUG - Start of the program
+2020-06-28 14:53:44,473 - DEBUG - Head of LL 23
+2020-06-28 14:53:44,474 - DEBUG - This node data is 23
+2020-06-28 14:53:44,474 - DEBUG - Next node is None
+2020-06-28 14:53:44,474 - DEBUG - Prev node is 23
+2020-06-28 14:55:47,375 - DEBUG - Start of the program
+2020-06-28 14:55:47,375 - DEBUG - Head of LL 23
+2020-06-28 14:55:47,375 - DEBUG - This node data is 23
+2020-06-28 14:55:47,375 - DEBUG - Temp next node is None
+2020-06-28 14:55:47,375 - DEBUG - Prev node is 23
+2020-06-28 14:55:47,375 - DEBUG - This node next is None
+2020-06-28 14:55:47,375 - DEBUG - Head node is 23
+2020-06-28 15:00:26,659 - DEBUG - Start of the program
+2020-06-28 15:00:26,659 - DEBUG - Head of LL 23
+2020-06-28 15:00:26,659 - DEBUG - This node next data is 40
+2020-06-28 15:00:26,659 - DEBUG - Temp next node is None
+2020-06-28 15:00:26,659 - DEBUG - Prev node is 23
+2020-06-28 15:00:26,659 - DEBUG - This node next is None
+2020-06-28 15:00:26,659 - DEBUG - Head node is 23
+2020-06-28 15:02:16,262 - DEBUG - Start of the program
+2020-06-28 15:02:16,262 - DEBUG - Head of LL 23
+2020-06-28 15:02:16,262 - DEBUG - This node next data is 40
+2020-06-28 15:02:16,262 - DEBUG - Temp next node is None
+2020-06-28 15:02:16,262 - DEBUG - Prev node is 23
+2020-06-28 15:02:16,262 - DEBUG - This node next is None
+2020-06-28 15:02:16,262 - DEBUG - Head node is 23
+2020-06-28 15:05:35,026 - DEBUG - Start of the program
+2020-06-28 15:05:35,026 - DEBUG - Head of LL 23
+2020-06-28 15:09:09,833 - DEBUG - Start of the program
+2020-06-28 15:09:09,833 - DEBUG - Head of LL 23
+2020-06-28 15:10:39,203 - DEBUG - Start of the program
+2020-06-28 15:10:39,203 - DEBUG - Head of LL 23
+2020-06-28 15:12:02,701 - DEBUG - Start of the program
+2020-06-28 15:12:02,701 - DEBUG - Head of LL 23
+2020-06-28 15:13:19,798 - DEBUG - Start of the program
+2020-06-28 15:13:19,798 - DEBUG - Head of LL 23
+2020-06-28 15:13:19,798 - DEBUG - This node next data is 40
+2020-06-28 15:13:19,798 - DEBUG - Temp next node is None
+2020-06-28 15:13:19,798 - DEBUG - Prev node is 23
+2020-06-28 15:13:19,798 - DEBUG - This node next is <__main__.Node object at 0x03A1A958>
+2020-06-28 15:13:19,798 - DEBUG - This node next data is 3
+2020-06-28 15:13:19,798 - DEBUG - Temp next node is 23
+2020-06-28 15:13:19,798 - DEBUG - Prev node is 40
+2020-06-28 15:13:19,798 - DEBUG - This node next is <__main__.Node object at 0x03A1A670>
+2020-06-28 15:13:19,799 - DEBUG - This node next data is 4
+2020-06-28 15:13:19,799 - DEBUG - Temp next node is 40
+2020-06-28 15:13:19,799 - DEBUG - Prev node is 3
+2020-06-28 15:13:19,799 - DEBUG - This node next is <__main__.Node object at 0x03A1A550>
+2020-06-28 15:16:15,373 - DEBUG - Start of the program
+2020-06-28 15:16:15,373 - DEBUG - Head of LL 23
+2020-06-28 15:16:15,373 - DEBUG - This node next data is 40
+2020-06-28 15:16:15,373 - DEBUG - Temp next node is Zero
+2020-06-28 15:16:15,373 - DEBUG - Prev node is 23
+2020-06-28 15:16:15,373 - DEBUG - This node next is <__main__.Node object at 0x036EA940>
+2020-06-28 15:16:15,373 - DEBUG - This node next data is 3
+2020-06-28 15:16:15,373 - DEBUG - Temp next node is 23
+2020-06-28 15:16:15,373 - DEBUG - Prev node is 40
+2020-06-28 15:16:15,373 - DEBUG - This node next is <__main__.Node object at 0x036EA658>
+2020-06-28 15:16:15,374 - DEBUG - This node next data is 4
+2020-06-28 15:16:15,374 - DEBUG - Temp next node is 40
+2020-06-28 15:16:15,374 - DEBUG - Prev node is 3
+2020-06-28 15:16:15,374 - DEBUG - This node next is <__main__.Node object at 0x036EA538>
+2020-06-28 15:18:12,550 - DEBUG - Start of the program
+2020-06-28 15:18:12,550 - DEBUG - Head of LL 23
+2020-06-28 15:18:12,550 - DEBUG - This node next data is 40
+2020-06-28 15:18:12,550 - DEBUG - Temp next node is None
+2020-06-28 15:18:12,550 - DEBUG - Prev node is 23
+2020-06-28 15:18:12,551 - DEBUG - This node next is <__main__.Node object at 0x038BA958>
+2020-06-28 15:18:12,551 - DEBUG - This node next data is 3
+2020-06-28 15:18:12,551 - DEBUG - Temp next node is 23
+2020-06-28 15:18:12,551 - DEBUG - Prev node is 40
+2020-06-28 15:18:12,551 - DEBUG - This node next is <__main__.Node object at 0x038BA670>
+2020-06-28 15:18:12,551 - DEBUG - This node next data is 4
+2020-06-28 15:18:12,551 - DEBUG - Temp next node is 40
+2020-06-28 15:18:12,551 - DEBUG - Prev node is 3
+2020-06-28 15:18:12,551 - DEBUG - This node next is <__main__.Node object at 0x038BA550>
+2020-06-28 15:18:12,551 - DEBUG - This node next data is None
+2020-06-28 15:18:12,551 - DEBUG - Temp next node is 3
+2020-06-28 15:18:12,551 - DEBUG - Prev node is 4
+2020-06-28 15:18:12,551 - DEBUG - This node next is None
+2020-06-28 15:18:12,551 - DEBUG - Head node is 4
