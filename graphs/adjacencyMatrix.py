@@ -1,3 +1,10 @@
+import logging
+from copy import copy, deepcopy
+
+logging.basicConfig(filename='myMatrixGraph.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+
+logging.debug('Start of the program')
+
 class Vertex():
     def __init__(self, n):
         self.name = n
@@ -10,10 +17,15 @@ class Graph():
     def add_vertex(self, vertex):
         if isinstance(vertex, Vertex) and vertex.name not in self.vertices:
             self.vertices[vertex.name] = vertex
-            for row in self.edges:
-                row.append(0)
-            self.edges.append([0] * (len(self.edges) + 1))
+            # Creating 2 by 2 matrix of edges
+            self.edges = [[0 for x in range(len(self.edges) + 1)] for y in range(len(self.edges) + 1)] 
+            # for row in self.edges:
+            #     row.append(0)
+            logging.debug('Edges %s' % (self.edges))
+            # self.edges.append([0] * (len(self.edges) + 1))
+            # logging.debug('Edges column? %s' % (self.edges))
             self.edge_indices[vertex.name] = len(self.edge_indices)
+            logging.debug('Edge indices %s' % (self.edge_indices))
             return True
         else:
             return False
