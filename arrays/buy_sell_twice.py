@@ -16,6 +16,7 @@ def buy_sell_twice(prices):
     return max_total_profit
 
 # O(n) time, O(1) space complexity
+# 1st sell, 2nd buy and 2nd sell ALL at i-th day!
 def buy_sell_twice_2(prices):
     if len(prices) == 0:
         return 0
