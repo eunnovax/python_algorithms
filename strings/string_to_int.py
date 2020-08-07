@@ -7,7 +7,7 @@ def int_to_str(x):
 
     s=[]
     while True:
-        # chr(ord('0') + <0..9>) - to convert from integer to string
+        # chr(ord('0') + <0..9>) - to convert from base 10 integer to base 10 string
         # x % 10 - to get the last element in integer
         s.append(chr(ord('0') + x % 10))
         # to remove the last element
@@ -28,3 +28,5 @@ s = '345'
 print(type(str_to_int(s)))
 
 print(type(string.digits.index('6')))
+
+# Time: O(n), Space: O(n)
