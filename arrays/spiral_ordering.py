@@ -22,11 +22,6 @@ def spiral_order(square_matrix):
 
 T = [[1,2,3],[4,5,6],[7,8,9]]
 print(spiral_order(T))
-# offset = 0
-# print(T[offset][offset:-1-offset])
-# print(list(zip(*T))[-1-offset][offset:-1-offset])
-# print(T[-1-offset][-1-offset:offset:-1])
-# print(list(zip(*T))[offset][-1-offset:offset:-1])
 
 ## Print the 2d array
 # for r in T:
@@ -35,5 +30,7 @@ print(spiral_order(T))
 #     print()
 ## Print the column of 2d array
 # print([row[-1] for row in T])
+print([i for i in T[i][-1]])
+
 ## Print the transpose of 2d array so that columns become rows
 # print(list(zip(*T)))
