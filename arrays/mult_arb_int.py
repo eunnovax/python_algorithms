@@ -15,3 +15,8 @@ def multiply(num1, num2):
     return [sign * result[0]] + result[1:]
 
     # time complexity is O(n*m), n - 1st number, m - 2nd number
+res = [ 0,0,0,1,34,3,6,7 ]
+arr = [i for i, x in enumerate(res) if x != 0]
+print(arr)
+result = res[next((i for i, x in enumerate(res) if x != 0), len(res)) :] or [0]
+print(result)
