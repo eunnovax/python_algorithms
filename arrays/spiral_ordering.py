@@ -10,6 +10,7 @@ def spiral_order(square_matrix):
         spiral_ordering.extend(square_matrix[offset][offset:-1-offset]) 
         print(spiral_ordering)
         spiral_ordering.extend(list(zip(*square_matrix))[-1-offset][offset:-1-offset])
+        print('transpose', list(zip(*square_matrix))) #transpose by unzipping an iterable, that can treated as an array of tuples of sorts
         print(spiral_ordering)
         spiral_ordering.extend(square_matrix[-1-offset][-1-offset:offset:-1])
         print(spiral_ordering)
@@ -20,7 +21,7 @@ def spiral_order(square_matrix):
         clockwise_matrix_layer(offset)
     return spiral_ordering
 
-T = [[1,2,3],[4,5,6],[7,8,9]]
+T = [[1,2,3],[8,9,4],[7,6,5]]
 print(spiral_order(T))
 
 ## Print the 2d array
@@ -30,7 +31,7 @@ print(spiral_order(T))
 #     print()
 ## Print the column of 2d array
 # print([row[-1] for row in T])
-print([i for i in T[i][-1]])
+# print([i for i in T[i][-1]])
 
 ## Print the transpose of 2d array so that columns become rows
 # print(list(zip(*T)))
