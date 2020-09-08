@@ -95,6 +95,20 @@ class LinkedList(object):
         logging.debug('Head node is %s' % (self.root.data))
         return True
 
+def merge_sorted_lists(L1, L2):
+    d_head = tail = LinkedList()
+
+    while L1 and L2:
+        if L1.data < L2.data:
+            tail.next, L1 = L1, L1.next
+        else:
+            tail.next, L2 = L2, L2.next
+        tail = tail.next
+    #Appends the remaining nodes of L1, L2
+    tail.next = L1 or L2
+    return d_head.next
+
+
 ll = LinkedList()
 ll.add(4)
 ll.add(3)

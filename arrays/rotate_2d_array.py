@@ -14,7 +14,7 @@ def rotate_2d_array(matrix):
     for i in range(len(matrix)):
         matrix[i] = list(reversed(matrix[i]))
     return matrix
-
+# Time - O(n^2) because reversed and zip are O(n)
 
 matr = [[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]]
 print(rotate_2d_array(matr))
