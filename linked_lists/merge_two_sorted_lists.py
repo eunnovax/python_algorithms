@@ -9,7 +9,7 @@ def merge_sorted_lists(L1, L2):
     while L1 and L2:
         if L1.data < L2.data:
             # assign the smallest value to the new list
-            # refill the smallest value position with the next node
+            # refill the smallest value position with the next node to reduce space to O(1)
             tail.next, L1 = L1, L1.next
         else:
             tail.next, L2 = L2, L2.next
