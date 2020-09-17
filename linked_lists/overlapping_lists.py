@@ -3,7 +3,7 @@ class ListNode():
         self.data = x
         self.next = next
 
-def overlapping_no_cycle_lists(L1, L2):
+def has_overlap(L1, L2):
     n1, n2, step1, step2 = L1, L2, 0, 0
     while n1:
         n1 = n1.next
@@ -36,4 +36,4 @@ for i in range(1, 5):
     l2_tail = l2_tail.next
 l2_tail.next = l1_head.next.next
 
-print(overlapping_no_cycle_lists(l1_head, l2_head))
+print(has_overlap(l1_head, l2_head))
