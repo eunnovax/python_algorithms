@@ -9,13 +9,13 @@ def cyclic_right_shift(L, k):
     first = dummy_head.next
     for _ in range(k):
         first = first.next
-    second = dummy_head
+    second = dummy_head.next
     while first.next:
         print("first", first.data)
         first, second = first.next, second.next
     first.next = dummy_head.next
-    dummy_head.next = second.next.next
-    second.next.next = None
+    dummy_head.next = second.next
+    second.next = None
     first = dummy_head.next
     return dummy_head
 
