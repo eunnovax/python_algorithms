@@ -38,7 +38,7 @@ class MaxHeap():
             return
         elif self.heap[index] > self.heap[parent]:
             self._swap(index, parent)
-            self._floatUp
+            self._floatUp(parent)
 
     def _bubbleDown(self, index): #maxheapify
         left = index * 2
