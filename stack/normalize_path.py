@@ -9,7 +9,7 @@ def shortest_pathname(path):
         if item == '/' and stack[-1] == '/':
             stack.pop()
             print('stack after pop', stack)
-        elif item == '/' and stack[-1] == '.' and stack[-2] != '.': # this condition blocks /../
+        elif item == '/' and stack[-1] == '.' and stack[-2] != '.': 
             stack.pop()
             print('stack after pop', stack)
             continue

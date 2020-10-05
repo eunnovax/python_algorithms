@@ -4,7 +4,7 @@ class BTNode():
         self.right = None
         self.data = data
 
-class BinaryTree():
+class BinaryTree(): # fills nodes left-to-right using queue
     def __init__(self, data=0):
         self.root = BTNode(data)
     
