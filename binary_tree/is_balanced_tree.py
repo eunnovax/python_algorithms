@@ -8,13 +8,13 @@ def is_balanced_tree(tree):
         
         # Implement Postorder traversal
         # left subtree
-        left_tree = check_balance(tree)
+        left_tree = check_balance(tree.left)
         if not left_tree.balanced:
             # not balanced
             return BalancedWithHeight(False, 0)
 
         # right subtree
-        right_tree = check_balance(tree)
+        right_tree = check_balance(tree.right)
         if not right_tree.balanced:
             # not balanced
             return BalancedWithHeight(False, 0)
