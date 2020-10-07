@@ -40,7 +40,7 @@ class BinaryTree(): # fills nodes left-to-right using queue
 #         self.node = node
 #         self.status = status
 
-def lca(tree, node1, node2):
+def lca(tree, node1, node2):  # O(n) time, O(1) space
     Ancestor = collections.namedtuple('Ancestor', ('node','status'))
     def lca_finder(tree, node1, node2):
         # base case
@@ -71,6 +71,26 @@ def lca(tree, node1, node2):
         
     return lca_finder(tree, node1, node2).node.data
 
+def lca_parent(node1, node2):  # O(h) time, O(1) space!
+    # Compute the height of each node
+    height1, height2, temp1, temp2 = 0, 0, node1, node2
+    while temp1:
+        temp1 = temp1.parent
+        height1 += 1
+    while temp2:
+        temp2 = temp2.parent
+        height2 += 1
+    # Bring the deeper node to the same depth
+    while height1 > height2: # when h1 > h2
+        node1 = node1.parent
+        height1 -= 1
+    while height2 > height1: # when h2 > h1
+        node2 = node2.parent
+        height2 -= 1
+    # Ascension
+    while node1 != node2:
+        node1, node2 = node1.parent, node2.parent
+    return node1
 
 tree = BinaryTree(3)
 tree.insert(21)
